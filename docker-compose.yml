@@ -3,9 +3,7 @@ services:
   postgres:
     image: 'postgres:latest'
     environment:
-      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres_password
-    restart: always
   redis:
     image: 'redis:latest'
   nginx:
