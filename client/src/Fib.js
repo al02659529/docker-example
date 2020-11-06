@@ -41,12 +41,8 @@ const Fib = props => {
     }
 
     useEffect(() => {
-        fetchValues().then(r => {
-            console.log(r)}).catch(e => {
-            console.log(e)})
-        fetchIndexes().then(r => {
-            console.log(r)}).catch(e => {
-            console.log(e)})
+        fetchValues()
+        fetchIndexes()
     }, [])
 
     return (

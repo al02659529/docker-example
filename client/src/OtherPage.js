@@ -1,8 +1,11 @@
-
+import {Link} from "react-router-dom";
 
 const OtherPage = () => {
     return(
-        <h1>Hello world</h1>
+        <div>
+            <h1>Hello world</h1>
+            <Link to="/">Go back home</Link>
+        </div>
     )
 }
 

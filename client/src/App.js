@@ -10,14 +10,15 @@ function App() {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <Link to="/">Home</Link>
-            <Link to="/otherpage">Other page</Link>
+            <h1 className="App-title">Welcome to React</h1>
+              <Link to="/">Home</Link>
+              <Link to="/otherpage">Other page</Link>
           </header>
-          <Route path="/"><Fib/></Route>
-          <Route path="/otherpage"><OtherPage/></Route>
+
+            <div>
+                <Route exact path="/"><Fib/></Route>
+                <Route path="/otherpage"><OtherPage/></Route>
+            </div>
         </div>
       </Router>
   );
